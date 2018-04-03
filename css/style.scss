@@ -1,0 +1,276 @@
+@import 'mixins';
+
+html, body, header, nav, section, div, h3, p, ul, li, a, blockquote, img, form, input, textarea, button{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, a:active, a:visited{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button-hover{
+  background: #012d61;
+  transform: scale(0.9);
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: 'Questrial', sans-serif;
+  letter-spacing: 3px;
+}
+
+.video-header{
+  height: 100%;
+  color: #ffffff;
+
+    .fullscreen-position{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .fullscreen-video-wrap{
+      overflow: hidden;
+
+        video{
+          min-width: 100%;
+          min-height: 100%;
+        }
+    }
+
+    .header-overlay{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(1, 29, 53, 0.41);
+    }
+
+    .header-content{
+      z-index: 1;
+      text-align: center;
+      font-size: 16px;
+      padding: 1.5em;
+
+      .top-container{
+        width: 100%;
+        height: 10%;
+        display: flex;
+
+          .logo{
+            width: 15%;
+            align-self: center;
+            font-size: 2em;
+          }
+
+          .navigation{
+            width: 85%;
+            align-self: center;
+            text-align: right;
+            font-size: 1.3em;
+
+              li{
+                display: inline-block;
+                margin: 0 0.4em;
+              }
+            }
+          }
+
+          .tag-wrapper{
+            @include tags(0.3em);
+
+            a{
+              font-size: 1.3em;
+              background: #003471;
+              padding: 0.6em 0.9em;
+              border-radius: 1.5em;
+            }
+          }
+    }
+}
+
+// ==================== SECTION - 1 | QUOTE WITH IMAGE ====================
+
+        .quote-container{
+            @include quotes(30%, 70%);
+          }
+
+// ==================== SECTION - 2 | PLACES TILE ====================
+
+    .category-wrapper{
+      width: 100%;
+      height: 100%;
+      color: #ffffff;
+      text-align: center;
+
+        .places-container{
+          width: 100%;
+          height: 50%;
+          background-image: url("../Img/Places.png");
+          background-size: cover;
+
+            @include tags(0.3em);
+        }
+
+        .category-container{
+          width: 100%;
+          height: 50%;
+          display: flex;
+
+            .people-container{
+              @include category("../Img/People.png");
+            }
+
+            .events-container{
+              @include category("../Img/Events.png");
+            }
+        }
+
+        a{
+          padding: 0.5rem 0.9rem;
+          border: 0.1rem solid #ffffff;
+          font-size: 1.3rem;
+        }
+    }
+
+    // ==================== SECTION - 3 | CATEGORY AND QUOTE WITH PORTRAIT ====================
+
+    .quote-container-2{
+      color: #ffffff;
+      background: black;
+        @include quotes(40%, 60%);
+      }
+
+// ==================== SECTION - 4 | CONTACT FORM ====================
+
+.half-screen{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#contact-wrapper{
+width: 100%;
+height: 100%;
+
+    #action-top{
+    width: 100%;
+    height: 20%;
+    font-size: 4rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+      p{
+        width: 100%;
+      }
+    }
+
+    #contact-container{
+    	width: 100%;
+    	height: 80%;
+    	display: flex;
+
+        #contact-img{
+
+            div{
+              max-width: 350px;
+              margin: 0 auto;
+
+                img{
+                  width: 100%;
+              }
+          }
+      }
+
+          #contact-form{
+
+              form{
+                width: 90%;
+                margin: 0 auto;
+
+                  #name, #email, #message, #send{
+                  	width: 100%;
+                  }
+
+                  input, textarea, #send button{
+                  	width: 94%;
+                  	margin: 2% 3%;
+                  	font-size: 1.3rem;
+                  	padding: 0.9rem 1.5rem;
+                  	border-radius: 1.5rem;
+                  	border-style: none;
+                  	outline: none;
+                    background: #e7e6e6;
+                    font-weight: bold;
+                    font-family: 'Questrial', sans-serif;
+                    color: #817f7f;
+                    transition: all 0.2s;
+              }
+
+                input:focus, textarea:focus, input:hover, textarea:hover{
+                  background: #ffffff;
+                  border: 0.1rem solid #817f7f;
+              }
+
+              #send button{
+                background: #003471;
+                color: #ffffff;
+                letter-spacing: 0.3rem;
+              }
+          }
+      }
+  }
+}
+
+// ==================== FOOTER | PORTRAITS AND SOCIAL LINKS ====================
+
+footer{
+  width: 100%;
+  background: #202020;
+  color: #ffffff;
+
+    .lower-portraits{
+      width: 100%;
+
+        img{
+          width: 100%;
+        }
+    }
+
+    .social{
+      width: 100%;
+      text-align: center;
+      margin: 2rem;
+      font-size: 3rem;
+
+        .fa{
+          margin: 2rem;
+        }
+    }
+
+    .copyrights{
+      width: 100%;
+      text-align: center;
+      padding: 0 1rem 1rem 1rem;
+
+        h3, p{
+          display: inline-block;
+          margin: 0 0.5rem;
+        }
+
+        h3{
+          font-size: 3rem;
+        }
+    }
+}
