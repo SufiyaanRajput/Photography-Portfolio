@@ -38,9 +38,16 @@ body {
     height: 100%; }
   .video-header .fullscreen-video-wrap {
     overflow: hidden; }
+    @media only screen and (max-width: 480px) {
+      .video-header .fullscreen-video-wrap {
+        background-image: url("../Img/mobile-bg.png");
+        background-size: cover; } }
     .video-header .fullscreen-video-wrap video {
       min-width: 100%;
       min-height: 100%; }
+      @media only screen and (max-width: 480px) {
+        .video-header .fullscreen-video-wrap video {
+          display: none; } }
   .video-header .header-overlay {
     width: 100%;
     height: 100%;
@@ -49,7 +56,10 @@ body {
     z-index: 1;
     text-align: center;
     font-size: 16px;
-    padding: 1.5em; }
+    padding-top: 2%; }
+    @media only screen and (max-width: 480px) {
+      .video-header .header-content {
+        font-size: 10px; } }
     .video-header .header-content .top-container {
       width: 100%;
       height: 10%;
@@ -61,17 +71,26 @@ body {
         -ms-flex-item-align: center;
         align-self: center;
         font-size: 2em; }
+        @media only screen and (max-width: 480px) {
+          .video-header .header-content .top-container .logo {
+            margin-left: 5%; } }
       .video-header .header-content .top-container .navigation {
         width: 82%;
         -ms-flex-item-align: center;
         align-self: center;
         text-align: right;
-        font-size: 1.3em;
-        margin-right: 2%; }
+        font-size: 1.3em; }
+        @media only screen and (max-width: 480px) {
+          .video-header .header-content .top-container .navigation {
+            margin-right: 5%; } }
     .video-header .header-content .tag-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      font-size: 16px; }
+      @media only screen and (max-width: 480px) {
+        .video-header .header-content .tag-wrapper {
+          font-size: 10px; } }
       .video-header .header-content .tag-wrapper .tagline {
         width: 100%;
         -ms-flex-item-align: center;
@@ -81,21 +100,58 @@ body {
           font-family: 'Arimo', sans-serif;
           margin-bottom: 0.3em;
           letter-spacing: 0.5rem; }
+          @media only screen and (max-width: 480px) {
+            .video-header .header-content .tag-wrapper .tagline h3 {
+              font-size: 3em;
+              margin-bottom: 0.7em; } }
       .video-header .header-content .tag-wrapper a {
         font-size: 1.3em;
         background: #003471;
         padding: 0.6em 0.9em;
         border-radius: 1.5em; }
+  .video-header #menu-overlay {
+    background: #202020;
+    z-index: 2;
+    visibility: hidden; }
+    .video-header #menu-overlay div:nth-of-type(1),
+    .video-header #menu-overlay div:nth-of-type(2),
+    .video-header #menu-overlay div:nth-of-type(3),
+    .video-header #menu-overlay div:nth-of-type(4),
+    .video-header #menu-overlay div:nth-of-type(5) {
+      width: 100%;
+      height: 20%;
+      color: #ffffff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-size: 2rem; }
+  .video-header #close {
+    position: absolute;
+    top: 5%;
+    right: 5%; }
 
 .quote-container {
+  font-size: 16px;
   height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media only screen and (max-width: 480px) {
+    .quote-container {
+      font-size: 10px; } }
   .quote-container .portrait {
     width: 30%;
     height: 100%; }
+    @media only screen and (max-width: 480px) {
+      .quote-container .portrait {
+        display: none; } }
     .quote-container .portrait img {
       height: 100%;
       width: 100%; }
@@ -104,20 +160,31 @@ body {
     -ms-flex-item-align: center;
     align-self: center;
     text-align: center;
-    line-height: 5rem;
-    font-size: 2rem; }
+    line-height: 3em;
+    font-size: 2em; }
+    @media only screen and (max-width: 480px) {
+      .quote-container .quote {
+        width: 100%;
+        line-height: 2.5em; } }
 
 .about-wrapper {
   background: #202020;
   color: #ffffff;
+  font-size: 16px;
   height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media only screen and (max-width: 480px) {
+    .about-wrapper {
+      font-size: 10px; } }
   .about-wrapper .portrait {
     width: 30%;
     height: 100%; }
+    @media only screen and (max-width: 480px) {
+      .about-wrapper .portrait {
+        display: none; } }
     .about-wrapper .portrait img {
       height: 100%;
       width: 100%; }
@@ -126,19 +193,34 @@ body {
     -ms-flex-item-align: center;
     align-self: center;
     text-align: center;
-    line-height: 5rem;
-    font-size: 2rem; }
+    line-height: 3em;
+    font-size: 2em; }
+    @media only screen and (max-width: 480px) {
+      .about-wrapper .quote {
+        width: 100%;
+        line-height: 2.5em; } }
   .about-wrapper .quote {
     -ms-flex-item-align: start;
     align-self: flex-start;
-    margin: 2rem; }
+    margin: 2%; }
+    @media only screen and (max-width: 480px) {
+      .about-wrapper .quote {
+        -ms-flex-item-align: center;
+        align-self: center; } }
     .about-wrapper .quote h3 {
       text-align: left;
       font-size: 3rem;
       letter-spacing: 1rem; }
+      @media only screen and (max-width: 480px) {
+        .about-wrapper .quote h3 {
+          text-align: center;
+          margin-bottom: 15%; } }
     .about-wrapper .quote p {
-      margin: 2rem;
+      margin: 2%;
       letter-spacing: 0.6rem; }
+      @media only screen and (max-width: 480px) {
+        .about-wrapper .quote p {
+          margin: 3% 0; } }
 
 .category-wrapper {
   width: 100%;
@@ -152,7 +234,14 @@ body {
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    font-size: 16px; }
+    @media only screen and (max-width: 480px) {
+      .category-wrapper .places-container {
+        height: 33.33%; } }
+    @media only screen and (max-width: 480px) {
+      .category-wrapper .places-container {
+        font-size: 10px; } }
     .category-wrapper .places-container .tagline {
       width: 100%;
       -ms-flex-item-align: center;
@@ -162,12 +251,20 @@ body {
         font-family: 'Arimo', sans-serif;
         margin-bottom: 0.3em;
         letter-spacing: 0.5rem; }
+        @media only screen and (max-width: 480px) {
+          .category-wrapper .places-container .tagline h3 {
+            font-size: 3em;
+            margin-bottom: 0.7em; } }
   .category-wrapper .category-container {
     width: 100%;
     height: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media only screen and (max-width: 480px) {
+      .category-wrapper .category-container {
+        display: block;
+        height: 100%; } }
     .category-wrapper .category-container .people-container {
       width: 50%;
       background-size: cover;
@@ -175,7 +272,15 @@ body {
       font-size: 10px;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      font-size: 16px; }
+      @media only screen and (max-width: 480px) {
+        .category-wrapper .category-container .people-container {
+          width: 100%;
+          height: 33.33%; } }
+      @media only screen and (max-width: 480px) {
+        .category-wrapper .category-container .people-container {
+          font-size: 10px; } }
       .category-wrapper .category-container .people-container .tagline {
         width: 100%;
         -ms-flex-item-align: center;
@@ -185,6 +290,10 @@ body {
           font-family: 'Arimo', sans-serif;
           margin-bottom: 0.5em;
           letter-spacing: 0.5rem; }
+          @media only screen and (max-width: 480px) {
+            .category-wrapper .category-container .people-container .tagline h3 {
+              font-size: 3em;
+              margin-bottom: 0.9em; } }
     .category-wrapper .category-container .events-container {
       width: 50%;
       background-size: cover;
@@ -192,7 +301,15 @@ body {
       font-size: 10px;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      font-size: 16px; }
+      @media only screen and (max-width: 480px) {
+        .category-wrapper .category-container .events-container {
+          width: 100%;
+          height: 33.33%; } }
+      @media only screen and (max-width: 480px) {
+        .category-wrapper .category-container .events-container {
+          font-size: 10px; } }
       .category-wrapper .category-container .events-container .tagline {
         width: 100%;
         -ms-flex-item-align: center;
@@ -202,6 +319,10 @@ body {
           font-family: 'Arimo', sans-serif;
           margin-bottom: 0.5em;
           letter-spacing: 0.5rem; }
+          @media only screen and (max-width: 480px) {
+            .category-wrapper .category-container .events-container .tagline h3 {
+              font-size: 3em;
+              margin-bottom: 0.9em; } }
   .category-wrapper a {
     padding: 0.5rem 0.9rem;
     border: 0.1rem solid #ffffff;
@@ -210,14 +331,21 @@ body {
 .quote-container-2 {
   color: #ffffff;
   background: black;
+  font-size: 16px;
   height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media only screen and (max-width: 480px) {
+    .quote-container-2 {
+      font-size: 10px; } }
   .quote-container-2 .portrait {
     width: 40%;
     height: 100%; }
+    @media only screen and (max-width: 480px) {
+      .quote-container-2 .portrait {
+        display: none; } }
     .quote-container-2 .portrait img {
       height: 100%;
       width: 100%; }
@@ -226,8 +354,12 @@ body {
     -ms-flex-item-align: center;
     align-self: center;
     text-align: center;
-    line-height: 5rem;
-    font-size: 2rem; }
+    line-height: 3em;
+    font-size: 2em; }
+    @media only screen and (max-width: 480px) {
+      .quote-container-2 .quote {
+        width: 100%;
+        line-height: 2.5em; } }
 
 .half-screen {
   height: 100%;
@@ -238,15 +370,23 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media only screen and (max-width: 480px) {
+    .half-screen {
+      width: 100%; } }
 
 #contact-wrapper {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-size: 16px; }
+  @media only screen and (max-width: 480px) {
+    #contact-wrapper {
+      font-size: 10px;
+      height: auto; } }
   #contact-wrapper #action-top {
     width: 100%;
     height: 20%;
-    font-size: 4rem;
-    padding: 1rem;
+    font-size: 4em;
+    padding: 1em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -254,6 +394,9 @@ body {
     -ms-flex-align: center;
     align-items: center;
     text-align: center; }
+    @media only screen and (max-width: 480px) {
+      #contact-wrapper #action-top {
+        font-size: 3em; } }
     #contact-wrapper #action-top p {
       width: 100%; }
   #contact-wrapper #contact-container {
@@ -262,11 +405,17 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media only screen and (max-width: 480px) {
+      #contact-wrapper #contact-container #contact-img {
+        display: none; } }
     #contact-wrapper #contact-container #contact-img div {
       max-width: 350px;
       margin: 0 auto; }
       #contact-wrapper #contact-container #contact-img div img {
         width: 100%; }
+    @media only screen and (max-width: 480px) {
+      #contact-wrapper #contact-container #contact-form {
+        margin-bottom: 10%; } }
     #contact-wrapper #contact-container #contact-form form {
       width: 90%;
       margin: 0 auto; }
@@ -298,7 +447,11 @@ body {
 footer {
   width: 100%;
   background: #202020;
-  color: #ffffff; }
+  color: #ffffff;
+  font-size: 16px; }
+  @media only screen and (max-width: 480px) {
+    footer {
+      font-size: 10px; } }
   footer .lower-portraits {
     width: 100%; }
     footer .lower-portraits img {
@@ -306,8 +459,8 @@ footer {
   footer .social {
     width: 100%;
     text-align: center;
-    margin: 2rem;
-    font-size: 3rem; }
+    margin: 2%;
+    font-size: 3em; }
     footer .social .fa {
       margin: 2rem; }
   footer .copyrights {
@@ -316,6 +469,9 @@ footer {
     padding: 0 1rem 1rem 1rem; }
     footer .copyrights h3, footer .copyrights p {
       display: inline-block;
-      margin: 0 0.5rem; }
+      margin: 0 0.5%; }
+      @media only screen and (max-width: 480px) {
+        footer .copyrights h3, footer .copyrights p {
+          line-height: 1.5em; } }
     footer .copyrights h3 {
       font-size: 3rem; }
