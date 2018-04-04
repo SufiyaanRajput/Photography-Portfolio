@@ -14,6 +14,10 @@ a, a:active, a:visited {
   -ms-transform: scale(0.9);
   transform: scale(0.9); }
 
+.quotations {
+  max-width: 700px;
+  margin: 0 auto; }
+
 html, body {
   width: 100%;
   height: 100%; }
@@ -104,9 +108,39 @@ body {
     text-align: center;
     line-height: 5rem;
     font-size: 2rem; }
-    .quote-container .quote blockquote {
-      max-width: 700px;
-      margin: 0 auto; }
+
+.about-wrapper {
+  background: #202020;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .about-wrapper .portrait {
+    width: 30%;
+    height: 100%; }
+    .about-wrapper .portrait img {
+      height: 100%;
+      width: 100%; }
+  .about-wrapper .quote {
+    width: 70%;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 2rem; }
+  .about-wrapper .quote {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    margin: 2rem; }
+    .about-wrapper .quote h3 {
+      text-align: left;
+      font-size: 3rem;
+      letter-spacing: 1rem; }
+    .about-wrapper .quote p {
+      margin: 2rem;
+      letter-spacing: 0.6rem; }
 
 .category-wrapper {
   width: 100%;
@@ -196,9 +230,6 @@ body {
     text-align: center;
     line-height: 5rem;
     font-size: 2rem; }
-    .quote-container-2 .quote blockquote {
-      max-width: 700px;
-      margin: 0 auto; }
 
 .half-screen {
   height: 100%;

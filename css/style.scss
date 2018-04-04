@@ -16,6 +16,11 @@ a, a:active, a:visited{
   transform: scale(0.9);
 }
 
+.quotations{
+max-width: 700px;
+margin: 0 auto;
+}
+
 html, body{
   width: 100%;
   height: 100%;
@@ -103,7 +108,30 @@ body{
             @include quotes(30%, 70%);
           }
 
-// ==================== SECTION - 2 | PLACES TILE ====================
+// ==================== SECTION - 2 | ABOUT SECTION ====================
+
+              .about-wrapper{
+                background: #202020;
+                color: #ffffff;
+                  @include quotes(30%, 70%);
+
+                  .quote{
+                    align-self: flex-start;
+                    margin: 2rem;
+                    h3{
+                      text-align: left;
+                      font-size: 3rem;
+                      letter-spacing: 1rem;
+                    }
+
+                    p{
+                      margin: 2rem;
+                      letter-spacing: 0.6rem;
+                    }
+                  }
+              }
+
+// ==================== SECTION - 3 | PLACES TILE ====================
 
     .category-wrapper{
       width: 100%;
@@ -141,7 +169,7 @@ body{
         }
     }
 
-    // ==================== SECTION - 3 | CATEGORY AND QUOTE WITH PORTRAIT ====================
+    // ==================== SECTION - 4 | CATEGORY AND QUOTE WITH PORTRAIT ====================
 
     .quote-container-2{
       color: #ffffff;
@@ -149,7 +177,7 @@ body{
         @include quotes(40%, 60%);
       }
 
-// ==================== SECTION - 4 | CONTACT FORM ====================
+// ==================== SECTION - 5 | CONTACT FORM ====================
 
 .half-screen{
   height: 100%;
