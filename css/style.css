@@ -62,14 +62,12 @@ body {
         align-self: center;
         font-size: 2em; }
       .video-header .header-content .top-container .navigation {
-        width: 85%;
+        width: 82%;
         -ms-flex-item-align: center;
         align-self: center;
         text-align: right;
-        font-size: 1.3em; }
-        .video-header .header-content .top-container .navigation li {
-          display: inline-block;
-          margin: 0 0.4em; }
+        font-size: 1.3em;
+        margin-right: 2%; }
     .video-header .header-content .tag-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
