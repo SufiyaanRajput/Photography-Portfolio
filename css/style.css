@@ -9,7 +9,6 @@ a, a:active, a:visited {
   text-decoration: none; }
 
 .button-hover {
-  background: #012d61;
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9); }
@@ -22,6 +21,10 @@ a, a:active, a:visited {
 .quotations {
   max-width: 700px;
   margin: 0 auto; }
+
+.hide {
+  visibility: hidden;
+  opacity: 0; }
 
 html, body {
   width: 100%;
@@ -83,14 +86,21 @@ body {
           .video-header .header-content .top-container .logo {
             margin-left: 5%; } }
       .video-header .header-content .top-container .navigation {
-        width: 82%;
+        width: 10%;
         -ms-flex-item-align: center;
         align-self: center;
-        text-align: right;
-        font-size: 1.3em; }
+        font-size: 1.3em;
+        z-index: 1;
+        position: absolute;
+        right: 2%;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
         @media only screen and (max-width: 480px) {
           .video-header .header-content .top-container .navigation {
-            margin-right: 5%; } }
+            right: 15%; } }
+        .video-header .header-content .top-container .navigation p:hover {
+          cursor: pointer; }
     .video-header .header-content .tag-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -112,10 +122,15 @@ body {
             .video-header .header-content .tag-wrapper .tagline h3 {
               font-size: 3em;
               margin-bottom: 0.7em; } }
+      .video-header .header-content .tag-wrapper p {
+        font-size: 2em;
+        margin-bottom: 1.5em; }
   .video-header #menu-overlay {
     background: #202020;
     z-index: 2;
-    visibility: hidden; }
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
     .video-header #menu-overlay div:nth-of-type(1),
     .video-header #menu-overlay div:nth-of-type(2),
     .video-header #menu-overlay div:nth-of-type(3),
@@ -133,11 +148,16 @@ body {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      font-size: 2rem; }
+      font-size: 2rem;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
   .video-header #close {
     position: absolute;
     top: 5%;
     right: 5%; }
+  .video-header #close:hover {
+    cursor: pointer; }
 
 .quote-container {
   font-size: 16px;
@@ -446,6 +466,8 @@ body {
         background: #003471;
         color: #ffffff;
         letter-spacing: 0.3rem; }
+      #contact-wrapper #contact-container #contact-form form #send button:hover {
+        background: #012d61; }
 
 footer {
   width: 100%;

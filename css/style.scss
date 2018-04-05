@@ -12,7 +12,6 @@ a, a:active, a:visited{
 }
 
 .button-hover{
-  background: #012d61;
   transform: scale(0.9);
 }
 
@@ -25,6 +24,12 @@ a, a:active, a:visited{
 .quotations{
 max-width: 700px;
 margin: 0 auto;
+}
+
+.hide{
+  visibility: hidden;
+  opacity: 0;
+
 }
 
 html, body{
@@ -104,26 +109,38 @@ body{
           }
 
           .navigation{
-            width: 82%;
+            width: 10%;
             align-self: center;
-            text-align: right;
             font-size: 1.3em;
+            z-index: 1;
+            position: absolute;
+            right: 2%;
+            transition: all 0.3s;
 
             @include mQ(480px){
-              margin-right: 5%;
+              right: 15%;
+            }
+
+            p:hover{
+              cursor: pointer;
             }
             }
           }
 
           .tag-wrapper{
             @include tags(0.3em);
+
+            p{
+              font-size: 2em;
+              margin-bottom: 1.5em;
+            }
           }
     }
 
     #menu-overlay{
       background: #202020;
       z-index: 2;
-      visibility: hidden;
+      transition: all 0.5s;
 
           div:nth-of-type(1),
            div:nth-of-type(2),
@@ -137,6 +154,7 @@ body{
              align-items: center;
              justify-content: center;
              font-size: 2rem;
+             transition: all 0.3s;
        }
     }
 
@@ -144,6 +162,10 @@ body{
       position: absolute;
       top: 5%;
       right: 5%;
+    }
+
+    #close:hover{
+      cursor: pointer;
     }
 }
 
@@ -347,6 +369,10 @@ font-size: 16px;
                 background: #003471;
                 color: #ffffff;
                 letter-spacing: 0.3rem;
+              }
+
+              #send button:hover{
+                background: #012d61;
               }
           }
       }
