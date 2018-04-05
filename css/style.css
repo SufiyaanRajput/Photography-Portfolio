@@ -14,6 +14,11 @@ a, a:active, a:visited {
   -ms-transform: scale(0.9);
   transform: scale(0.9); }
 
+.link {
+  padding: 0.5rem 0.9rem;
+  border: 0.1rem solid #ffffff;
+  font-size: 1.3rem; }
+
 .quotations {
   max-width: 700px;
   margin: 0 auto; }
@@ -52,6 +57,9 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(1, 29, 53, 0.41); }
+    @media only screen and (max-width: 480px) {
+      .video-header .header-overlay {
+        background-color: rgba(1, 29, 53, 0.69); } }
   .video-header .header-content {
     z-index: 1;
     text-align: center;
@@ -59,7 +67,7 @@ body {
     padding-top: 2%; }
     @media only screen and (max-width: 480px) {
       .video-header .header-content {
-        font-size: 10px; } }
+        font-size: 13px; } }
     .video-header .header-content .top-container {
       width: 100%;
       height: 10%;
@@ -90,7 +98,7 @@ body {
       font-size: 16px; }
       @media only screen and (max-width: 480px) {
         .video-header .header-content .tag-wrapper {
-          font-size: 10px; } }
+          font-size: 13px; } }
       .video-header .header-content .tag-wrapper .tagline {
         width: 100%;
         -ms-flex-item-align: center;
@@ -104,11 +112,6 @@ body {
             .video-header .header-content .tag-wrapper .tagline h3 {
               font-size: 3em;
               margin-bottom: 0.7em; } }
-      .video-header .header-content .tag-wrapper a {
-        font-size: 1.3em;
-        background: #003471;
-        padding: 0.6em 0.9em;
-        border-radius: 1.5em; }
   .video-header #menu-overlay {
     background: #202020;
     z-index: 2;
@@ -214,13 +217,17 @@ body {
       @media only screen and (max-width: 480px) {
         .about-wrapper .quote h3 {
           text-align: center;
-          margin-bottom: 15%; } }
+          margin-bottom: 15%;
+          letter-spacing: 0.5rem; } }
     .about-wrapper .quote p {
       margin: 2%;
       letter-spacing: 0.6rem; }
       @media only screen and (max-width: 480px) {
         .about-wrapper .quote p {
-          margin: 3% 0; } }
+          margin: 3% 0;
+          letter-spacing: 0.3rem; } }
+      .about-wrapper .quote p .fa {
+        margin-right: 2%; }
 
 .category-wrapper {
   width: 100%;
@@ -241,7 +248,7 @@ body {
         height: 33.33%; } }
     @media only screen and (max-width: 480px) {
       .category-wrapper .places-container {
-        font-size: 10px; } }
+        font-size: 13px; } }
     .category-wrapper .places-container .tagline {
       width: 100%;
       -ms-flex-item-align: center;
@@ -280,7 +287,7 @@ body {
           height: 33.33%; } }
       @media only screen and (max-width: 480px) {
         .category-wrapper .category-container .people-container {
-          font-size: 10px; } }
+          font-size: 13px; } }
       .category-wrapper .category-container .people-container .tagline {
         width: 100%;
         -ms-flex-item-align: center;
@@ -309,7 +316,7 @@ body {
           height: 33.33%; } }
       @media only screen and (max-width: 480px) {
         .category-wrapper .category-container .events-container {
-          font-size: 10px; } }
+          font-size: 13px; } }
       .category-wrapper .category-container .events-container .tagline {
         width: 100%;
         -ms-flex-item-align: center;
@@ -323,10 +330,6 @@ body {
             .category-wrapper .category-container .events-container .tagline h3 {
               font-size: 3em;
               margin-bottom: 0.9em; } }
-  .category-wrapper a {
-    padding: 0.5rem 0.9rem;
-    border: 0.1rem solid #ffffff;
-    font-size: 1.3rem; }
 
 .quote-container-2 {
   color: #ffffff;
@@ -461,8 +464,11 @@ footer {
     text-align: center;
     margin: 2%;
     font-size: 3em; }
+    @media only screen and (max-width: 480px) {
+      footer .social {
+        margin: 2% 0; } }
     footer .social .fa {
-      margin: 2rem; }
+      margin: 2%; }
   footer .copyrights {
     width: 100%;
     text-align: center;
