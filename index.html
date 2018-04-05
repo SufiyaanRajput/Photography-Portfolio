@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Arimo:700|Questrial" rel="stylesheet">
+		<link rel="stylesheet" href="css/aos.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -56,10 +57,10 @@
 		</header>
 
 		<section class="quote-container">
-				<div class="portrait">
+				<div class="portrait" data-aos="fade-right" data-aos-duration="1000">
 					<img src="Img/Senti-quote.png" alt="">
 				</div>
-				<div class="quote">
+				<div class="quote" data-aos="fade-left" data-aos-duration="1000">
 					<blockquote cite="https://petapixel.com/2014/05/29/70-inspirational-quotes-photographers/">
 						<p>“We are making photographs to understand what our lives mean to us.”</p>
 						<p><strong>— Ralph Hattersley</strong></p>
@@ -70,10 +71,10 @@
 		<section class="about-wrapper">
 	 		<div class="quote">
 				 <h3>About</h3>
-				 <p><i class="fa fa-camera"></i>Photographer</p>
-				 <p><i class="fa fa-video-camera"></i>Videographer</p>
-				 <p><i class="fa fa-pencil"></i>Sketch Artist</p>
-				 <p>Fashionist, Music Addict, Travel</p>
+				 <p data-aos="fade-down" data-aos-duration="800"><i class="fa fa-camera"></i>Photographer</p>
+				 <p data-aos="fade-down" data-aos-duration="800"><i class="fa fa-video-camera"></i>Videographer</p>
+				 <p data-aos="fade-down" data-aos-duration="800"><i class="fa fa-pencil"></i>Sketch Artist</p>
+				 <p data-aos="fade-up" data-aos-duration="800">Fashionist, Music Addict, Travel</p>
 			</div>
 			 <div class="portrait">
 				 <img src="Img/about-img.jpg" alt="">
@@ -82,20 +83,20 @@
 
 		<section class="category-wrapper">
 			<div class="places-container">
-				<div class="tagline">
+				<div class="tagline" data-aos="fade-in" data-aos-duration="800">
 					<h3>PLACES</h3>
 					<a href="#" class="link">View —</a>
 				</div>
 			</div>
 				<div class="category-container">
 					<div class="people-container">
-						<div class="tagline">
+						<div class="tagline" data-aos="fade-in" data-aos-duration="800">
 							<h3>PEOPLE</h3>
 							<a href="#" class="link">View —</a>
 						</div>
 					</div>
 					<div class="events-container">
-						<div class="tagline">
+						<div class="tagline" data-aos="fade-in" data-aos-duration="800">
 							<h3>EVENTS</h3>
 							<a href="#" class="link">View —</a>
 						</div>
@@ -104,13 +105,13 @@
 		</section>
 
 		<section class="quote-container-2">
-				<div class="quote">
+				<div class="quote" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
 					<blockquote cite="https://www.brainyquote.com/quotes/robert_frank_184087?src=t_photography">
 						<p>“Black and white are the colors of photography. To me they symbolize the alternatives of hope and despair to which mankind is forever subjected.”</p>
 						<p><strong>— Robert Frank</strong></p>
 					</blockquote>
 				</div>
-				<div class="portrait">
+				<div class="portrait" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
 					<img src="Img\Senti-quote-2.JPG" alt="">
 				</div>
 		</section>
@@ -120,12 +121,12 @@
 			<p>Let's Capture Your Perfect Moment!</p>
 		</div>
 		<div id="contact-container">
-			<div id="contact-img" class="half-screen">
+			<div id="contact-img" class="half-screen" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
 				<div>
 					<img src="Img/contact-img.png">
 				</div>
 			</div>
-			<div id="contact-form" class="half-screen">
+			<div id="contact-form" class="half-screen" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
 				<form>
 					<div id="name">
 						<input type="text" name="name" placeholder="name">
@@ -157,8 +158,12 @@
 				<p>All rights reserved | 2018.</p>
 				<p>Designed and developed by: Sufiyaan Rajput.</p>
 			</div>
-
-
 	</footer>
+
+	<script src="scripts/aos.js">
+	</script>
+	<script type="text/javascript">
+		AOS.init();
+	</script>
 	</body>
 </html>
