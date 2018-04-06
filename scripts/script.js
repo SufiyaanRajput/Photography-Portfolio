@@ -1,7 +1,8 @@
 var menu_button = document.querySelector('.navigation p');
 var menu = document.querySelector('#menu-overlay');
 var close_icon = document.querySelector('#close');
-var buttons = document.querySelectorAll('.navigation, button, #menu-overlay div');
+var buttons = document.querySelectorAll('.navigation p, button, #menu-overlay div');
+
 
 menu_button.addEventListener('click', function(){
   menu.classList.remove('hide');
