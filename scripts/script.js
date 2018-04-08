@@ -19,4 +19,10 @@ for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('mouseout', function(){
     this.classList.remove('button-hover');
   });
+
+  if (i>0 && i<6) {
+      buttons[i].addEventListener('click', function(){
+        menu.classList.add('hide');
+      });
+  }
 }
