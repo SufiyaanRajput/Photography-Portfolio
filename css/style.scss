@@ -187,8 +187,7 @@ body{
                     margin: 2%;
 
                       @include mQ(480px){
-                        align-self: center;
-                      }
+                        align-self: center;                      }
 
                     h3{
                       text-align: left;
@@ -207,7 +206,8 @@ body{
                       letter-spacing: 0.6rem;
 
                       @include mQ(480px){
-                        margin: 3% 0;
+                        font-size: 1.7rem;
+                        margin: 9% 0;
                         letter-spacing: 0.3rem;
                       }
 

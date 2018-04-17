@@ -244,7 +244,8 @@ body {
       letter-spacing: 0.6rem; }
       @media only screen and (max-width: 480px) {
         .about-wrapper .quote p {
-          margin: 3% 0;
+          font-size: 1.7rem;
+          margin: 9% 0;
           letter-spacing: 0.3rem; } }
       .about-wrapper .quote p .fa {
         margin-right: 2%; }

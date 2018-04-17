@@ -102,7 +102,7 @@ header {
   @media only screen and (max-width: 480px) {
     .showcase-wrapper {
       width: 100%;
-      margin: 5% 0; } }
+      margin: 5% 0 0 0; } }
   .showcase-wrapper .title-wrapper {
     margin: 5%;
     text-align: center; }
@@ -168,6 +168,7 @@ footer {
   font-size: 16px; }
   @media only screen and (max-width: 480px) {
     footer {
+      margin-top: -1%;
       font-size: 10px; } }
   footer .social {
     width: 95%;
@@ -176,7 +177,7 @@ footer {
     font-size: 3em; }
     @media only screen and (max-width: 480px) {
       footer .social {
-        margin: 2% 0; } }
+        margin: 0 0 2% 0; } }
     footer .social .fa {
       margin: 2%; }
   footer .copyrights {
